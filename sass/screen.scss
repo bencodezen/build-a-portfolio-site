@@ -1,0 +1,163 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/* Normalize
+=====================================*/
+
+html, 
+body {
+  width: 100%;
+}
+
+section, 
+header {
+  width: 100%;
+  float: left;
+}
+
+/* Colors
+=====================================*/
+
+$grey: #bcbbbb;
+$orange: #f89a1c;
+
+/* Layout
+=====================================*/
+
+header {
+  border-bottom: 3px solid $grey;
+  padding: 20px 0;
+}
+
+/* Typography
+=====================================*/
+
+h1, 
+h2, 
+h3 {
+  font-family: 'Alegreya', serif;
+}
+
+
+p, 
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 1.8em;
+}
+
+
+h2 {
+  font-size: 2.2em;
+}
+
+
+h3 {
+  font-size: 1.6em;
+}
+
+
+p {
+  font-size: 1em;
+}
+
+
+a {
+  color: $grey;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Components
+=====================================*/
+
+/* Logo */
+
+.logo {
+  float: left;
+  color: $orange;
+  border: 8px solid $orange;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  padding-left: 3px;
+}
+
+.logo-text {
+  font-size: 1.9em;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Name and Title */
+
+.info {
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.info-name {
+  padding-top: 11px;
+}
+
+.info-title {
+  font: 1.1em 'Alegreya', serif;
+  padding-top: 5px;
+}
+
+/* Hero */
+
+.hero {
+  margin-top: 20px;
+  background-color: lighten(#000, 10%);
+}
+
+.hero-content {
+  display: block;
+  margin-top: 35px;
+  color: darken(#fff, 10%);
+  background-color: lighten(#000, 10%);
+  font: 1.4em/1.5 'Courier', monospace;
+  margin-bottom: 30px;
+}
+
+/* Featured Work */
+
+.work {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project-heading {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.project-image {
+  margin-bottom: 20px;
+}
+
+.featured-project {
+  padding-bottom: 20px;
+  float: left;
+  width: 100%;
+  @media screen and (min-width: 1124px) {
+    width: calc(33% - 30px);
+  }
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
